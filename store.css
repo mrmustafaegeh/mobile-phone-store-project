@@ -1,0 +1,144 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Bar */
+.top-bar {
+  background-color: teal;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 28px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+/* Cart icon (top-right) */
+#cart-icon {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 2;
+}
+
+/* Main content wrapper */
+.main-content {
+  margin-top: 100px; /* Space below navbar and cart icon */
+  display: flex;
+  justify-content: center;
+}
+
+/* Table Styling */
+table {
+  width: 90%;
+  max-width: 1000px;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  text-align: center;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #f0f0f0;
+  font-weight: 600;
+}
+
+/* Product Images */
+td img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: auto;
+}
+
+/* Add to Cart Buttons */
+td button {
+  padding: 8px 16px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+td button:hover {
+  background-color: #0b6e6e;
+}
+
+/* Optional: Request Form Section */
+.request-bar {
+  background-color: teal;
+  padding: 40px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.request-bar h2 {
+  margin-bottom: 20px;
+}
+
+.request-bar input[type="text"],
+.request-bar input[type="email"],
+.request-bar input[type="date"] {
+  margin: 10px 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 220px;
+}
+
+.request-bar input[type="submit"] {
+  margin-top: 20px;
+  background-color: white;
+  color: teal;
+  font-weight: bold;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Cart Page Styling (cart.html) */
+#cart-list {
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#cart-list li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 18px;
+}
+
+#total {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 20px;
+}
